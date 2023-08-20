@@ -29,9 +29,11 @@ int main() {
 
         if (strstr(result[i].tipo, "horizontal") != NULL){
             horizontal(&result[i]);
+            
 
         }if(strstr(result[i].tipo, "vertical") != NULL){
             vertical(&result[i]);
+            vertical2(&result[i]);
         }
 
 

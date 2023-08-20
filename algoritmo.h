@@ -25,6 +25,7 @@ void horizontal_2(InfoLinea * inf);
 int horizontal_aux(char * nombre, char * str);
 
 void vertical(InfoLinea * inf);
+void vertical2(InfoLinea * infosuck);
 
 /* FUNCINOES PARA LA CREACION DE LAS CARPETAS*/
 

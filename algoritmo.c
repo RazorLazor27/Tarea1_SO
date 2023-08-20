@@ -477,6 +477,9 @@ bool comparar(char linea[], char palabra[], int cantidad, int largo) {
     return flag;
 }
 void vertical2(InfoLinea * infosuck){
+    clock_t start, end;
+    double cpu_time;
+    start = clock();
 
 // Creacion de matriz
     char Matrix[infosuck->cant_letras][infosuck->cant_lineas];
@@ -556,6 +559,11 @@ void vertical2(InfoLinea * infosuck){
         bool banderita = comparar(palabran,word, letterCount, num_chars);
 
         if (banderita){
+
+            end = clock();
+            cpu_time = ((double)(end-start))/CLOCKS_PER_SEC;
+            printf("Tiempo de demora: %f segundos\n", cpu_time);
+
             break;
         }
  
