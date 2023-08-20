@@ -28,7 +28,9 @@ int main() {
         
 
         if (strstr(result[i].tipo, "horizontal") != NULL){
+
             horizontal(&result[i]);
+            horizontal_2(&result[i]);
             
 
         }if(strstr(result[i].tipo, "vertical") != NULL){
